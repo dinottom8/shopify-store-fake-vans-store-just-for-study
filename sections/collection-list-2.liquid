@@ -2,7 +2,7 @@
 
 {% schema %}
 {
-  "name": "Collection List 2",
+  "name": "collectionlisttwo",
   "tag": "section",
   "class": "collectionlist2",
   "settings": [
@@ -11,6 +11,18 @@
       "id": "collectionlistid",
       "label": "collectionlistlabel"
     }
+  ],"blocks": [
+     {
+       "name": "collection",
+       "type": "collection",
+       "settings": [
+         {
+           "type": "collection",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
   ]
 }
 {% endschema %}
