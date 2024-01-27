@@ -91,13 +91,13 @@
         "title": "Collections",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
+        "columns_desktop": 4,
+        "color_scheme": "inverse",
         "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 20
       }
     },
     "featured_collection": {
