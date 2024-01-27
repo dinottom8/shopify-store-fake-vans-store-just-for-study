@@ -3,8 +3,10 @@
 <img src="{{ section.settings.imagemdasessao }}" alt="">
 <hr>
 {% for block in section.blocks %}
-  <img src="{{ block.settings.imagemdobloquinho }}" alt="">
-  <p>{{ block.settings.textodobloquinho }}</p>
+  <div {{ block.shopify_attributes }}>
+    <img src="{{ block.settings.imagemdobloquinho }}" alt="">
+      <p>{{ block.settings.textodobloquinho }}</p>
+  </div>
 {% endfor %}
 
 {% schema %}
