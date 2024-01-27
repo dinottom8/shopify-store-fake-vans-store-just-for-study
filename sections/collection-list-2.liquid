@@ -1,6 +1,11 @@
 <h2> {{ section.settings.titulodasessao }} </h2>
 <p> {{ section.settings.textodasessao }} </p>
 <img src="{{ section.settings.imagemdasessao }}" alt="">
+<hr>
+{% for block in section.blocks %}
+  <img src="{{ block.settings.imagemdobloquinho }}" alt="">
+  <p>{{ block.settings.textodobloquinho }}</p>
+{% endfor %}
 
 {% schema %}
 {
