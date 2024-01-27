@@ -5,10 +5,6 @@
     "name": "t:sections.collection-list.name",
     "tag": "section",
     "class": "section section-collection-list",
-    "max_blocks": 15,
-    "disabled_on": {
-      "groups": ["header", "footer"]
-    },
     "settings": [
       {
         "type": "inline_richtext",
@@ -128,35 +124,6 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
         "default": 36
-      }
-    ],
-    "blocks": [
-      {
-        "type": "featured_collection",
-        "name": "t:sections.collection-list.blocks.featured_collection.name",
-        "settings": [
-          {
-            "type": "collection",
-            "id": "collection",
-            "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "t:sections.collection-list.presets.name",
-        "blocks": [
-          {
-            "type": "featured_collection"
-          },
-          {
-            "type": "featured_collection"
-          },
-          {
-            "type": "featured_collection"
-          }
-        ]
       }
     ]
   }
