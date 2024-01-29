@@ -100,16 +100,16 @@
         "padding_bottom": 20
       }
     },
-    "collection_list_2_RJnHNz": {
+    "collection_list_2_eiJkKj": {
       "type": "collection-list-2",
       "settings": {
-        "titulo_lista_colecoes": ""
+        "titulo_lista_colecoes": "All Collections"
       }
     }
   },
   "order": [
     "image_banner",
     "collection_list_RhQ4HR",
-    "collection_list_2_RJnHNz"
+    "collection_list_2_eiJkKj"
   ]
 }
