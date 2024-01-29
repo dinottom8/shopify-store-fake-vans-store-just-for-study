@@ -1,12 +1,15 @@
 <h1>{{ section.settings.titulo_lista_colecoes }}</h1>
-<ul class="lista_colecoes">
-  {% for block in section.blocks %}
-    <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
-      <img src="{{ block.settings.foto_colecao | image_url }}" alt="Foto da coleção" class="foto_colecao">
-      <a href="{{ block.settings.link_colecao }}"> {{ block.settings.nome_colecao }} </a>
-    </li>
-  {% endfor %}
-</ul>
+
+{% if section.settings.manualmente_lista_colecoes %}
+    <ul class="lista_colecoes">
+      {% for block in section.blocks %}
+        <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
+          <img src="{{ block.settings.foto_colecao | image_url }}" alt="Foto da coleção" class="foto_colecao">
+          <a href="{{ block.settings.link_colecao }}"> {{ block.settings.nome_colecao }} </a>
+        </li>
+      {% endfor %}
+    </ul>
+{% endif %}
 
 {% schema %}
 {
