@@ -13,14 +13,14 @@
 
 {% else %}
     
-  <ul class="lista_colecoes">
-    {% for collection in collections %}
-      <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
-        <img src="{{ collection.featured_image | image_url }}" alt="Foto da coleção" class="foto_colecao">
-        <a href="{{ collection.url }}">{{ collection.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="lista_colecoes">
+      {% for collection in collections %}
+        <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
+          <img src="{{ collection.featured_image | image_url }}" alt="Foto da coleção" class="foto_colecao">
+          <a href="{{ collection.url }}">{{ collection.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
     
 {% endif %}
 
@@ -41,6 +41,11 @@
         "type": "checkbox",
         "label": "Inserir coleções manualmente",
         "id": "manualmente_lista_colecoes"
+      },
+    {
+        "type": "checkbox",
+        "label": "Ativar slider",
+        "id": "slider_lista_colecoes"
       }
   ],
   "presets": [
