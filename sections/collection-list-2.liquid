@@ -1,5 +1,5 @@
 <h1>{{ section.settings.titulo_lista_colecoes }}</h1>
-<ul>
+<ul class="lista_colecoes">
   {% for block in section.blocks %}
     <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
       <img src="{{ block.settings.foto_colecao | image_url }}" alt="Foto da coleção">
@@ -49,7 +49,19 @@
 {% endschema %}
 
 {% stylesheet %}
-  ul {
+  .lista_colecoes {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
   }
+
+  .item_lista_colecoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+  }
+
+
 {% endstylesheet %}
