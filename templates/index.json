@@ -88,6 +88,7 @@
         "featured_collection_XYRJWL"
       ],
       "settings": {
+        "swipe_on_desktop": true,
         "title": "Collections",
         "heading_size": "h1",
         "image_ratio": "square",
@@ -134,7 +135,9 @@
         "colecao_xbcA6d"
       ],
       "settings": {
-        "titulo_lista_colecoes": "All Collections"
+        "titulo_lista_colecoes": "All Collections",
+        "manualmente_lista_colecoes": false,
+        "slider_lista_colecoes": false
       }
     }
   },
