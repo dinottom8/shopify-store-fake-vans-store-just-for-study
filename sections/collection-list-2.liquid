@@ -2,7 +2,7 @@
 <ul>
   {% for block in section.blocks %}
     <li {{ block.shopify_attributes }}>
-      <img src="{{ block.settings.foto_colecao | width: 200 }}" alt="Foto da coleção">
+      <img src="{{ block.settings.foto_colecao | image_url }}" alt="Foto da coleção">
       <p>{{ block.settings.nome_colecao }}</p>
     </li>
   {% endfor %}
