@@ -1,6 +1,7 @@
 <h1>{{ section.settings.titulo_lista_colecoes }}</h1>
 
 {% if section.settings.manualmente_lista_colecoes %}
+  
     <ul class="lista_colecoes">
       {% for block in section.blocks %}
         <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
@@ -9,11 +10,15 @@
         </li>
       {% endfor %}
     </ul>
+
 {% else %}
     
   <ul class="lista_colecoes">
     {% for collection in collections %}
-      {{- collection.title | link_to: collection.url }}
+      <li {{ block.shopify_attributes }}>
+        <img src="{{ collection.image |  image_url: }}" alt="Foto da coleção" class="foto_colecao">
+        {{- collection.title | link_to: collection.url }}
+      </li>
     {% endfor %}
   </ul>
     
