@@ -102,6 +102,18 @@
     },
     "collection_list_2_eiJkKj": {
       "type": "collection-list-2",
+      "blocks": {
+        "colecao_DjjCAc": {
+          "type": "colecao",
+          "settings": {
+            "foto_colecao": "shopify:\/\/shop_images\/Semtitulo_644d5dbb-6a26-49b0-8e28-1cefc35eb999.png",
+            "nome_colecao": "Tênis"
+          }
+        }
+      },
+      "block_order": [
+        "colecao_DjjCAc"
+      ],
       "settings": {
         "titulo_lista_colecoes": "All Collections"
       }
