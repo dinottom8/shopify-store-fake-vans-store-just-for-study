@@ -1,6 +1,11 @@
 <h1>{{ section.settings.titulo_lista_colecoes }}</h1>
 <ul>
-  <li></li>
+  {% for block in section.blocks %}
+    <li {{ blocks.shopify_attributes }}>
+      {{ block.settings.foto_colecao |  image_url: width: 200 }}
+      <p>{{ block.settings.nome_colecao }}</p>
+    </li>
+  {% endfor %}
 </ul>
 
 {% schema %}
