@@ -109,10 +109,18 @@
             "foto_colecao": "shopify:\/\/shop_images\/Semtitulo_644d5dbb-6a26-49b0-8e28-1cefc35eb999.png",
             "nome_colecao": "Tênis"
           }
+        },
+        "colecao_yUTUEh": {
+          "type": "colecao",
+          "settings": {
+            "foto_colecao": "shopify:\/\/shop_images\/Semtitulo_ca6fb1e6-9a41-4bcd-a0fc-ed077a3b4ced.png",
+            "nome_colecao": "Bermudas"
+          }
         }
       },
       "block_order": [
-        "colecao_DjjCAc"
+        "colecao_DjjCAc",
+        "colecao_yUTUEh"
       ],
       "settings": {
         "titulo_lista_colecoes": "All Collections"
