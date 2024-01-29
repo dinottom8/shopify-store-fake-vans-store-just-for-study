@@ -10,7 +10,13 @@
       {% endfor %}
     </ul>
 {% else %}
-      <h2>asd</h2>
+    
+  <ul class="lista_colecoes">
+    {% for collection in collections %}
+      {{- collection.title | link_to: collection.url }}
+    {% endfor %}
+  </ul>
+    
 {% endif %}
 
 {% schema %}
