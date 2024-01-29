@@ -2,7 +2,7 @@
 <ul class="lista_colecoes">
   {% for block in section.blocks %}
     <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
-      <img src="{{ block.settings.foto_colecao | image_url }}" alt="Foto da coleção">
+      <img src="{{ block.settings.foto_colecao | image_url }}" alt="Foto da coleção" class="foto_colecao">
       <p>{{ block.settings.nome_colecao }}</p>
     </li>
   {% endfor %}
@@ -63,5 +63,10 @@
     background-color: #1d1d1d;
   }
 
+  .foto_colecao {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+  }
 
 {% endstylesheet %}
