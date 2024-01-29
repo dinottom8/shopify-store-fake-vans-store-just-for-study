@@ -1,60 +1,21 @@
-<h2> {{ section.settings.titulodasessao }} </h2>
-<p> {{ section.settings.textodasessao }} </p>
-<img src="{{ section.settings.imagemdasessao }}" alt="">
-<hr>
-{% for block in section.blocks %}
-  <div {{ block.shopify_attributes }}>
-    <img src="{{ block.settings.imagemdobloquinho }}" alt="">
-      <p>{{ block.settings.textodobloquinho }}</p>
-  </div>
-{% endfor %}
+{{  }}
 
 {% schema %}
 {
-  "name": "Nome Customize",
+  "name": "collection list 2",
+  "class": "listcollection2class",
   "tag": "section",
-  "class": "classeadicional",
-  "limit": 1,
-  "max_blocks": 3,
   "settings": [
     {
-      "type": "text",
-      "id": "titulodasessao",
-      "label": "Título"
-    },
-    {
-      "type": "text",
-      "id": "textodasessao",
-      "label": "Texto"
-    }, {
-      "type": "image_picker",
-      "id": "imagemdasessao",
-      "label": "Imagem"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Um bloco qualquer",
-      "type": "bloquinho",
-      "limit": 3,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "imagemdobloquinho",
-          "label": "Imagem do bloquinho"
-        },
-        {
-          "type": "text",
-          "id": "textodobloquinho",
-          "label": "Texto do bloquinho"
-        }
-      ]
-    }
+        "type": "text",
+        "label": "Título Da Lista de Coleções",
+        "id": "titulo_lista_colecoes"
+      }
   ],
   "presets": [
     {
-      "name": "Collection List 2"
-    }
+        "name": "Collection List 2"
+      }
   ]
 }
 {% endschema %}
