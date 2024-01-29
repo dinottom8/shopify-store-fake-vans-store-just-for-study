@@ -1,7 +1,7 @@
 <h1>{{ section.settings.titulo_lista_colecoes }}</h1>
 <ul>
   {% for block in section.blocks %}
-    <li {{ block.shopify_attributes }}>
+    <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
       <img src="{{ block.settings.foto_colecao | image_url }}" alt="Foto da coleção">
       <p>{{ block.settings.nome_colecao }}</p>
     </li>
@@ -47,3 +47,9 @@
   ]
 }
 {% endschema %}
+
+{% stylesheet %}
+  ul {
+    list-style-type: none;
+  }
+{% endstylesheet %}
