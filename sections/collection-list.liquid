@@ -81,7 +81,7 @@
           </li>
         {%- endfor -%}
       </ul>
-      {%- if show_mobile_slider -%}
+      {%- if show_mobile_slider or section.settings.swipe_on_desktop -%}
         <div class="slider-buttons no-js-hidden">
           <button
             type="button"
@@ -139,6 +139,11 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "label": "Swipe on desktop",
+      "id": "swipe_on_desktop"
+    },
     {
       "type": "inline_richtext",
       "id": "title",
