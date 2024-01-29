@@ -17,7 +17,7 @@
     {% for collection in collections %}
       <li class="item_lista_colecoes" {{ block.shopify_attributes }}>
         <img src="{{ collection.featured_image | image_url }}" alt="Foto da coleção" class="foto_colecao">
-        {{- collection.title | link_to: collection.url }}
+        <a href="{{ collection.url }}">{{ collection.title }}</a>
       </li>
     {% endfor %}
   </ul>
