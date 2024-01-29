@@ -107,20 +107,31 @@
           "type": "colecao",
           "settings": {
             "foto_colecao": "shopify:\/\/shop_images\/Semtitulo_644d5dbb-6a26-49b0-8e28-1cefc35eb999.png",
-            "nome_colecao": "Tênis"
+            "nome_colecao": "Tênis",
+            "link_colecao": ""
           }
         },
         "colecao_yUTUEh": {
           "type": "colecao",
           "settings": {
             "foto_colecao": "shopify:\/\/shop_images\/Semtitulo_ca6fb1e6-9a41-4bcd-a0fc-ed077a3b4ced.png",
-            "nome_colecao": "Bermudas"
+            "nome_colecao": "Bermudas",
+            "link_colecao": ""
+          }
+        },
+        "colecao_xbcA6d": {
+          "type": "colecao",
+          "settings": {
+            "foto_colecao": "shopify:\/\/shop_images\/Capturadetela2024-01-25000854.png",
+            "nome_colecao": "Jaquetas",
+            "link_colecao": ""
           }
         }
       },
       "block_order": [
         "colecao_DjjCAc",
-        "colecao_yUTUEh"
+        "colecao_yUTUEh",
+        "colecao_xbcA6d"
       ],
       "settings": {
         "titulo_lista_colecoes": "All Collections"
