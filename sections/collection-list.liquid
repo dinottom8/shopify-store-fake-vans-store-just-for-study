@@ -14,14 +14,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  .grid--2-col-tablet.slider--everywhere .multicolumn-list__item {
-      margin-top: 0;
-  }
-
-  .multicolumn .slider--everywhere+.slider-buttons {
-      display: flex;
-  }
-
 {%- endstyle -%}
 
 {%- liquid
@@ -58,7 +50,7 @@
 
     <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
-        class="collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile or section.settings.swipe_on_desktop %} slider {% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider--mobile grid--peek{% endif %}{% if section.settings.swipe_on_desktop and section.blocks.size > 3 %} slider--everywhere{% endif %} collection-list--{{ section.blocks.size }}-items"
+        class="collection-list contains-card contains-card--collection{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -89,7 +81,7 @@
           </li>
         {%- endfor -%}
       </ul>
-      {%- if section.settings.swipe_on_mobile or section.settings.swipe_on_desktop -%}
+      {%- if show_mobile_slider -%}
         <div class="slider-buttons no-js-hidden">
           <button
             type="button"
@@ -147,11 +139,6 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type": "checkbox",
-      "label": "Swipe on desktop",
-      "id": "swipe_on_desktop"
-    },
     {
       "type": "inline_richtext",
       "id": "title",
